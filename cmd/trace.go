@@ -19,7 +19,7 @@ var traceCmd = &cobra.Command{
 		if len(args) > 0 {
 			for _, ip := range args {
 				fmt.Println(ip)
-				showData()
+				showData(ip)
 			}
 		} else {
 			fmt.Println("Please provide IP to trace.")
@@ -51,8 +51,8 @@ type Ip struct {
 	Postal   string `json:"postal"`
 }
 
-func showData() {
-	url := "http://ipinfo.io/1.1.1.1/geo"
+func showData(ip string) {
+	url := "http://ipinfo.io/" + ip + "/geo"
 	responseByte := getData(url)
 
 	data := Ip{}
