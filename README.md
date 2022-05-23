@@ -17,5 +17,5 @@ how to use: iptracker version
 
 ---
 
-hostname: "Returns the hostname from a IP"
+hostname < arguments >: "Returns the hostname from a IP"
 how to use: iptracker hostname 8.8.8.8
