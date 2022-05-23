@@ -42,13 +42,13 @@ var traceCmd = &cobra.Command{
 // }
 
 type Ip struct {
-	Ip       string `json;id`
-	City     string `json;city`
-	Region   string `json;region`
-	Country  string `json;counter`
-	Loc      string `json;loc`
-	Timezone string `json;timezone`
-	Postal   string `json;posta`
+	Ip       string `json:"id"`
+	City     string `json:"city"`
+	Region   string `json:"region"`
+	Country  string `json:"counter"`
+	Loc      string `json:"loc"`
+	Timezone string `json:"timezone"`
+	Postal   string `json:"postal"`
 }
 
 func showData() {
